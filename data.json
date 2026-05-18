@@ -1,0 +1,40 @@
+{
+  "debug-mode": false,
+  "package": "BlockEffects",
+  "maven-repositories": [{
+    "id": "placeholderapi",
+    "url": "https://repo.extendedclip.com/releases/"
+  }],
+  "jar-output": "C:\\Users\\obvio\\VisualBukkit6\\projects\\BlockEffects\\build\\target",
+  "selected-tab": 0,
+  "maven-dependencies": [
+    {
+      "scope": "provided",
+      "coords": "me.clip:placeholderapi:jar:2.11.6"
+    },
+    {
+      "scope": "provided",
+      "coords": "net.kyori:adventure-text-minimessage:jar:4.19.0"
+    }
+  ],
+  "open-plugin-components": [
+    "mainCommand",
+    "assignParticleData",
+    "getParticleData",
+    "tabCompletion",
+    "pluginEnable",
+    "sendMessage"
+  ],
+  "plugin-settings": {
+    "website": "https://wiki.obviouslee.dev/blockeffects",
+    "prefix": "",
+    "permissions": "",
+    "name": "BlockEffects",
+    "description": "Make your blocks stand out!",
+    "version": "5.0",
+    "soft-depend": "",
+    "authors": "Obviouslee",
+    "dependencies": "PlaceholderAPI",
+    "load-before": ""
+  }
+}

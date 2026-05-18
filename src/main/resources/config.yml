@@ -1,0 +1,81 @@
+##########################################################
+#                        GENERAL                         #
+# If you ever need help using BlockEffects, feel free to #
+# join my Discord server! I'm always around to help.     #
+# https://discord.com/invite/vy6GKMwbEE                  #
+##########################################################
+
+##########################################################
+#                        DEFAULTS                        #
+# Defaults are the base settings that particles will use #
+# upon creating them, allowing you to quickly set flags  #
+# without needing to manually edit them.                 #
+##########################################################
+defaults:
+    # Amount is how many of the particle spawn.
+    amount: 10
+    # Speed is how fast the particle travels. (Works differently per particle)
+    speed: 1
+    # World is which world the particle will spawn in. (Only applies when created via console)
+    world: world
+    # Location is where the particle will spawn in the world. (Only applies when created via console)
+    location: [0, 100, 0]
+    # Offset is how spread out the particle spawns.
+    offset: [0, 0, 0]
+    # Condition is what placeholder value allows the particle to be seen.
+    condition: [none, none]
+
+##########################################################
+#                        MESSAGES                        #
+# Messages are the feedback given by commands to show    #
+# the results or errors. Allows placeholders and mini    #
+# message formatting.                                    #
+##########################################################
+messages:
+    # The message shown before each message.
+    prefix: '<br><b><gradient:#72BDFF:#0389ff>BLOCKEFFECTS</gradient></b><br>'
+    # The message indicating the plugins files reloaded successfully.
+    reload: '%prefix%<#b3e8ff>You have successfully <#b3e8ff>reloaded <#00b2ff>BlockEffects v%0%<#b3e8ff>!<br>'
+    # The message indicating that an effect has successfully been made.
+    create: '%prefix%<#b3e8ff>You have created the effect <#00b2ff>%0% <#b3e8ff>with the particle <#00b2ff>%1%<#b3e8ff>.<br>'
+    # The message indicating that an effect has successfully been deleted.
+    remove: '%prefix%<#b3e8ff>You have removed the effect <#00b2ff>%0%<#b3e8ff>.<br>'
+    # The message indicating that a flag has successfully been set for an effect.
+    flag: '%prefix%<#b3e8ff>You have set <#00b2ff>%0% <#b3e8ff>to <#00b2ff>%1% <#b3e8ff>for <#00b2ff>%2%<#b3e8ff>.<br>'
+    # The messsage showing information about an effect.
+    info: |-
+        %prefix%<#00b2ff>%0% Effect Information:<br>
+        %1%
+    # The message going before each effect key's name.
+    info_key_prefix: '<#b3e8ff>'
+    # The message going before each effect key's value.
+    info_value_prefix: '<#00b2ff>'
+    # The message going inbetween the effect key's name and value.
+    info_separator: ': '
+    # The message showing all available commands.
+    help: |- 
+        %prefix%<dark_gray><b>|</b> <#00b2ff>/be reload: <#b3e8ff>Reloads plugin files
+        <dark_gray><b>|</b> <#00b2ff>/be create <name> <effect>: <#b3e8ff>Creates a new effect
+        <dark_gray><b>|</b> <#00b2ff>/be remove <name>: <#b3e8ff>Removes an active effect
+        <dark_gray><b>|</b> <#00b2ff>/be flag <name> <flag> <value>: <#b3e8ff>Edits effects visually
+        <dark_gray><b>|</b> <#00b2ff>/be info <name>: <#b3e8ff>View information on an effect<br>
+    # The error message showing that the user doesn't have permission to use the command.
+    no_permission: '%prefix%<#b3e8ff>You don''t have access to this command.<br>'
+    # The error message showing that there a display name is missing in the command's arguments.
+    missing_display_name: '%prefix%<#b3e8ff>You must specify a display name for the effect.<br>'
+    # The error message showing that there a particle is missing in the command's arguments.
+    missing_particle: '%prefix%<#b3e8ff>You must specify a particle for the effect.<br>'
+    # The error message showing that there a effect is missing in the command's arguments.
+    missing_effect: '%prefix%<#b3e8ff>You must specify an effect.<br>'
+    # The error message showing that there a flag is missing in the command's arguments.
+    missing_flag: '%prefix%<#b3e8ff>You must specify a flag for the effect.<br>'
+    # The error message showing that there a value is missing in the command's arguments.
+    missing_value: '%prefix%<#b3e8ff>You must specify a value for the flag.<br>'
+    # The error message showing that the specified particle is unknown in the command's arguments.
+    unknown_particle: '%prefix%<#b3e8ff>The particle <#00b2ff>%0% <#b3e8ff>couldn''t be found.<br>'
+    # The error message showing that the specified effect is unknown in the command's arguments.
+    unknown_effect: '%prefix%<#b3e8ff>The effect <#00b2ff>%0% <#b3e8ff>couldn''t be found.<br>'
+    # The error message showing that the specified flag is unknown in the command's arguments.
+    unknown_flag: '%prefix%<#b3e8ff>The flag <#00b2ff>%0% <#b3e8ff>couldn''t be found.<br>'
+    # The error message showing that the specified value is invalid in the command's arguments.
+    invalid_value: '%prefix%<#b3e8ff>The value <#00b2ff>%0% <#b3e8ff>is invalid for the flag <#00b2ff>%1%<#b3e8ff>.'

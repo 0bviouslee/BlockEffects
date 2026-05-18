@@ -1,0 +1,12 @@
+name: "BlockEffects"
+version: "5.0"
+main: "BlockEffects.PluginMain"
+api-version: "1.20"
+authors: [Obviouslee]
+description: "Make your blocks stand out!"
+website: "https://wiki.obviouslee.dev/blockeffects"
+depend: [PlaceholderAPI]
+
+commands:
+  blockeffects:
+    aliases: [be, bp]
